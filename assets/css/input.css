@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilitiels;
+@tailwind utilities;
 
 @import url(https://fonts.googleapis.com/css?family=Sanchez);
 /* classes inside @layer can be used with tailwind utilities. example: rtl:turn */
@@ -113,3 +113,35 @@ body {
   }
 }
 
+@keyframes pulse {
+  0% {
+    color: transparent;
+    background: rgba(229, 231, 235, 1);
+    border: none;
+    filter: brightness(0);
+    background-image: none;
+    opacity: 0.06;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    color: transparent;
+    background: rgba(229, 231, 235, 1);
+    border: none;
+    filter: brightness(0);
+    background-image: none;
+    opacity: 0.06;
+  }
+}
+
+[data-skeleton="true"] {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) 5;
+  animation-fill-mode: none;
+}
+
+input {
+  @apply outline-none focus:outline-none;
+}

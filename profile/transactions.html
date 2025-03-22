@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <script type="module" src="../assets/js/profile/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-[#FCEAE1] select-none">
+    <div class="font-Kalameh">
+        <!-- @component.NavBar() -->
+        <nav class="bg-white mobile:px-10 lg:px-20 py-4 flex justify-between">
+            <div class="flex items-center gap-10">
+                <img src="/logo/crstrip.svg" class="w-[6.188rem] h-7" alt="logo" />
+
+                <div class="flex items-center gap-8 mobile:hidden">
+                    <a href="#">services</a>
+                    <a href="#">Support</a>
+                    <a href="#">About us</a>
+                    <a href="#">Connect us</a>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 mobile:hidden">
+
+                <div id="languages_parent" class="relative cursor-pointer">
+                    <div id="inner_lang" class="flex items-center gap-3">
+                        <img src="/icons/UpdateMain/english.svg" alt="" />
+                        <span>
+                            English
+                        </span>
+                        <img src="/icons/UpdateMain/arrow.svg" alt="" />
+                    </div>
+
+                    <div id="languages"
+                        class="flex hidden text-[#1D1B20] flex-col gap-5 py-5 z-50 top-10 px-5 justify-center items-center absolute bg-white rounded-lg shadow">
+                        <div class="flex cursor-pointer items-center pr-10 gap-2">
+                            <img src="/icons/UpdateMain/farsi.svg" alt="..." />
+                            <span>Farsi</span>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-2">
+                            <img src="/icons/UpdateMain/arabic.svg" alt="..." />
+                            <span>Arabic</span>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-2">
+                            <img src="/icons/UpdateMain/english.svg" alt="..." />
+                            <span>English</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile_parent" class="flex cursor-pointer relative items-center gap-2">
+                    <img src="/icons/UpdateMain/user-b.svg" alt="" />
+                    <span>
+                        Ayoub Gharibavi
+                    </span>
+                    <img src="/icons/UpdateMain/arrow.svg" alt="" />
+
+                    <div id="profile" class="absolute hidden text-[#1D1B20]">
+                        <div
+                            class="flex text-[#1D1B20] flex-col w-60 gap-5 py-5 z-50 h-max  top-5 px-5 absolute bg-white rounded-lg shadow">
+                            <div class="flex border-b pb-2 justify-between">
+                                <div class="flex flex-col gap-2"><span class="text-[#605D64]">Wallet </span>
+                                    <div class="flex items-center gap-3"><span>12,000,000</span>
+                                        <p class="text-[#605D64]">USD</p>
+                                    </div>
+                                </div><button>
+
+                                    <img src="/icons/UpdateMain/add.svg" alt="" />
+                                </button>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/acc.svg" alt="" />
+                                <span>Account</span>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/transaction.svg" alt="" />
+                                <span>Transactions</span>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="" />
+                                <span>Tickets</span>
+                            </div>
+
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="" />
+                                <span>Support</span>
+                            </div>
+                            <div class="flex cursor-pointer text-[#EE0035] items-center gap-4">
+                                <img src="/icons/UpdateMain/logout.svg" alt="" />
+                                <span>Log out</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sidebar_menu_icon" class="hidden mobile:block">
+                <img class="h-8 cursor-pointer" src="/icons/main/menu.svg" alt="menu" />
+
+                <div id="sidebar_menu"
+                    class="fixed mobile:hidden left-0 top-0 w-[100vw] h-[100vh] bg-[#0000004D] backdrop-blur-[0.125rem] z-[100]">
+                    <div
+                        class="w-[21.25rem] h-full bg-white rtl:rounded-l-[2rem] ltr:rounded-r-[2rem] flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="mt-8 flex gap-4 items-center text-lg px-6 justify-between text-[2.15rem] font-bold text-[#1C0E07]">
+                                <img class="h-8 cursor-pointer" src="/images/UpdateMain/logo.svg" alt="search">
+                                <img class="h-8 cursor-pointer" src="/icons/main/close.svg" alt="close" />
+                            </div>
+                            <ul class="mt-10 text-xl text-[#5B4A42] px-6 space-y-3">
+                                <li
+                                    class="text-crs-first bg-crs-active h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+
+                                    Home
+                                </li>
+                                <li class="h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+                                    Contact Us
+                                </li>
+                                <li class="h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+                                    About Us
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="px-6">
+                            <div dir="rtl"
+                                class="flex p-1 mb-16 h-[3rem] bg-[#F7F7F9] rounded-[0.5rem] min-w-[13.25rem] text-[#514037]">
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem]">
+                                    فارسی
+                                </div>
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem]">
+                                    عربی
+                                </div>
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem] text-crs-first bg-white">
+                                    English
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="bg-crs-first h-48 -z-10"></main>
+        <div class="flex flex-col lg:flex-row gap-5 -mt-[9.5rem] mb-28 container">
+            <!-- @component.profile.sideBar-mobile() -->
+            <aside class="overflow-hidden lg:hidden rounded-xl relative bg-white w-full">
+
+
+                <div class="flex items-center px-4 py-3 text-[#1D1B20] justify-center">
+                    <ul class="w-full grid grid-cols-5 justify-center gap-3">
+                        <li>
+
+                            <a href="/profile/index.html"
+                                class="flex px-2.5 py-2 flex-col opacity-50 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile.svg" alt="..." />
+
+                                <span>
+                                    Profile
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="/profile/wallet.html"
+                                class="flex px-2.5 opacity-50 py-2 w-full flex-col rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+
+                                <span>
+                                    Wallet
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="/profile/tickets.html"
+                                class="flex flex-col  opacity-50 px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+
+                                <span>
+                                    Tickets
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="/profile/transactions.html"
+                                class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+
+                                <span>
+                                    Transactions
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/profile/support.html"
+                                class="flex opacity-50 px-2.5 py-2 flex-col w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+
+                                <span>
+                                    Support
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </aside>
+
+            <aside class="h-[54.5rem] mobile:hidden overflow-hidden rounded-[0.625rem] relative bg-white w-[20%]">
+                <div class="h-[9.5rem] w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
+                <div class="flex justify-center">
+                    <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-24 rounded-full " />
+                </div>
+
+                <div class="flex mt-28 px-5 text-[#1D1B20] justify-center">
+                    <ul class="w-full flex flex-col gap-3">
+                        <li>
+
+                            <a href="/profile/index.html"
+                                class="flex px-2.5 opacity-50 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile.svg" alt="..." />
+
+                                <span>
+                                    Profile
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="/profile/wallet.html"
+                                class="flex px-2.5 py-2 w-full opacity-50 rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+
+                                <span>
+                                    Wallet
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="/profile/tickets.html"
+                                class="flex px-2.5 py-2 w-full opacity-50 rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+
+                                <span>
+                                    Tickets
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="/profile/transactions.html"
+                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+
+                                <span>
+                                    Transactions
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/profile/support.html"
+                                class="flex px-2.5 py-2 w-full opacity-50 rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+
+                                <span>
+                                    Support
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="absolute flex justify-center w-full bottom-5 text-sm text-[#EE0035]">
+                    خروج از حساب کاربری
+                </button>
+            </aside>
+
+            <!-- @component.profile.transaction-index() -->
+            <main id="info" class="flex flex-col gap-5 lg:w-[80%] lg:h-[49.125rem]">
+                <div class="bg-white mobile:hidden p-6 flex flex-col rounded-xl gap-10 h-[25%] w-full">
+                    <span class="font-bold text-[#1D1B20] text-2xl">
+                        Search Transactions
+                    </span>
+
+
+                    <div class="flex items-end w-full gap-3 text-[#605D64]">
+                        <div class="flex w-full flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                Transaction number
+                            </label>
+
+                            <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                placeholder="شماره سفارش را وارد کنید" />
+                        </div>
+
+                        <div class="grid w-full grid-cols-2 items-center gap-2">
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="trans_num">
+                                    date (to)
+                                </label>
+
+                                <input id="date_to" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="از" />
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="trans_num">
+                                    date (from)
+                                </label>
+
+                                <input id="date_from" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="تا" />
+                            </div>
+                        </div>
+
+                        <div class="grid w-full grid-cols-2 items-center gap-2">
+                            <div class="flex flex-col gap-1">
+                                <label id="price_to" class="text-xs" for="trans_num">
+                                    price (to)
+                                </label>
+
+                                <input id="price_to" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="از" />
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="price_from">
+                                    price (from)
+                                </label>
+
+                                <input type="text" id="price_from"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="تا" />
+                            </div>
+                        </div>
+
+                        <button class="text-[#307FF8] w-fit rounded-md h-fit py-2 px-6 border-[#307FF8] border">
+                            search
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:hidden bg-white px-5 rounded-xl">
+                    <div id="mobile_search_show_trans"
+                        class="cursor-pointer flex justify-between items-center h-16  lg:hidden">
+                        <span>
+                            جستجو تراکنش
+                        </span>
+
+                        <img src="/icons/UpdateMain/arrow.svg" alt="..." />
+                    </div>
+
+                    <div id="mobile_search_trans" class=" flex-col pb-5 w-full hidden gap-3 text-[#605D64]">
+                        <div class="flex w-full flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                Transaction number
+                            </label>
+
+                            <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                placeholder="شماره سفارش را وارد کنید" />
+                        </div>
+
+                        <div class="grid w-full grid-cols-1 items-center gap-2">
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="trans_num">
+                                    date (to)
+                                </label>
+
+                                <input id="date_to" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="از" />
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="trans_num">
+                                    date (from)
+                                </label>
+
+                                <input id="date_from" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="تا" />
+                            </div>
+                        </div>
+
+                        <div class="grid w-full grid-cols-1 items-center gap-2">
+                            <div class="flex flex-col gap-1">
+                                <label id="price_to" class="text-xs" for="trans_num">
+                                    price (to)
+                                </label>
+
+                                <input id="price_to" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="از" />
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="price_from">
+                                    price (from)
+                                </label>
+
+                                <input type="text" id="price_from"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="تا" />
+                            </div>
+                        </div>
+
+                        <button class="text-[#307FF8] rounded-md h-fit py-2 px-6 border-[#307FF8] border">
+                            search
+                        </button>
+                    </div>
+                </div>
+
+                <div class="rounded-xl mobile:hidden p-5 w-full bg-[#FFDAC6] text-[#1E2A38]">
+                    <div class="grid grid-cols-8">
+                        <span>
+                            شماره تراکنش
+                        </span>
+                        <span>
+                            نوع تراکنش
+                        </span>
+                        <span>
+                            نوع خرید
+                        </span>
+                        <span>
+                            ساعت و تاریخ
+                        </span>
+                        <span>
+                            توضیحات
+                        </span>
+                        <span>
+                            مبلغ(ریال)
+                        </span>
+                        <span>
+                            وضعیت
+                        </span>
+
+                    </div>
+                </div>
+                <div class="flex flex-col mobile:hidden gap-1">
+
+                    <div class="rounded-xl flex flex-col gap-5 p-5 w-full bg-white text-[#7D8590]">
+                        <div class="grid grid-cols-8">
+                            <span>
+                                6598563254
+                            </span>
+                            <span>
+                                بلیط پرواز یک مسیره
+                            </span>
+                            <span>
+                                اعتباری
+                            </span>
+                            <span>
+                                10/Nov/2022
+                            </span>
+                            <span class="text-center">
+                                خرید بلیط تک مسیره-
+                                کسر از کیف پول
+                            </span>
+                            <span>
+                                12.000.000
+                            </span>
+                            <span class="text-[#2AB930]">
+                                پرداخت شده
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-xl lg:hidden py-3 flex flex-col gap-4 px-2 bg-white">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            شماره تراکنش
+                        </span>
+                        <span class="text-[#7D8590]">
+                            6598563254
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            نوع تراکنش
+                        </span>
+                        <span class="text-[#7D8590]">
+                            بلیط پرواز یک مسیره
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            نوع خرید
+                        </span>
+                        <span class="text-[#7D8590]">
+                            اعتباری
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            ساعت و تاریخ
+                        </span>
+                        <span class="text-[#7D8590]">
+                            10/Nov/2022
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            توضیحات
+                        </span>
+                        <span class="text-[#7D8590]">
+                            خرید بلیط تک مسیره-کسر از کیف پول
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            مبلغ کل(ریال)
+                        </span>
+                        <span class="text-[#7D8590]">
+                            12.000.000
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            وضعیت
+                        </span>
+                        <span class="text-[#2AB930]">
+                            نهایی شده
+                        </span>
+
+                    </div>
+                    <button class="text-[#307FF8] w-full rounded-xl h-fit py-2 px-6 border-[#307FF8] border">
+                        پشتیبانی
+                    </button>
+                </div>
+            </main>
+
+
+        </div>
+
+        <!-- @component.Footer() -->
+        <footer class="w-full">
+
+            <div class=" bg-crs-footer py-10 mobile:px-7">
+                <div class="flex px-[5rem] mobile:px-0 justify-between mobile:flex-col  lg:max-w-[105rem] lg:mx-auto">
+                    <div>
+                        <img src="/images/UpdateMain/logo.svg" alt="search">
+                        <p class="text-lg leading-[1.875rem] mt-2 text-Black/2">
+                            Where the Journey Begins and Memories are Made.
+                        </p>
+                        <div class="mt-10 mx-2 flex gap-2">
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Instagram.svg" alt="Instagram" />
+                            </div>
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Telegram.svg" alt="Telegram" />
+                            </div>
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Whatsapp.svg" alt="Whatsapp" />
+                            </div>
+                        </div>
+                        <h2 class="font-bold text-crs-first mt-6 px-2">CRSTRIP<span class="text-[#2C160B]">.COM</span>
+                        </h2>
+                    </div>
+                    <div class="flex gap-[5.5rem] pt-4 mobile:my-6 mobile:justify-start justify-center">
+                        <div>
+                            <h4 class="text-2xl leading-[2.5rem] font-bold text-[#2C160B]">Menu</h4>
+                            <ul class="mt-6 space-y-4 text-[#5B4A42] text-xl leading-[1.875rem]">
+                                <li>Services</li>
+                                <li>Support</li>
+                                <li>About us</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl leading-[2.5rem] font-bold text-[#2C160B]">Contact Info</h4>
+                            <ul class="mt-6 space-y-4 text-[#5B4A42] text-xl leading-[1.875rem]">
+
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/sms.svg" alt="call" /><span
+                                        dir="ltr">crstrip.com@gmail.com</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/call.svg" alt="call" /><span
+                                        dir="ltr">+9647815639914</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/location.svg" alt="location" /><span
+                                        dir="ltr">Najaf - Iraq</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div dir="ltr"
+                class="px-6 bg-white h-[4.5rem] flex items-center justify-center gap-2 text-sm text-[#2C160B]">
+                <img class="w-6 h-6" src="/icons/search/rights.svg" alt="rights" /><span class="pt-1.5">
+                    All rights to these services (website and mobile application) are reserved and owned by CRS
+                    Trip</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
